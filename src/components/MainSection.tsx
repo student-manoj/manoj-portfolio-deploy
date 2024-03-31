@@ -67,7 +67,7 @@ const MainSection = () => {
       {nav && (
         <div
           onClick={() => setNav(false)}
-          className="fixed top-20 z-30 h-screen w-full bg-slate-900/90 backdrop-blur"
+          className="fixed top-20 z-30 h-screen w-full bg-slate-900/90 text-white backdrop-blur"
         >
           <div className="flex flex-col items-center justify-center gap-8 py-3 text-xl">
             <div className="cursor-pointer text-lg font-semibold">Home</div>
