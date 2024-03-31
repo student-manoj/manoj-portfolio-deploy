@@ -1,5 +1,5 @@
 import Image from "next/image";
-import myimg1 from "../../../public/myimg1.png";
+// import myimg1 from "../../../public/myimg1.png";
 import { motion } from "framer-motion";
 
 const MyImg = () => {
@@ -13,7 +13,7 @@ const MyImg = () => {
       >
         <figure className="flex items-center justify-center">
           <Image
-            src={myimg1}
+            src="/myimg1.png"
             alt=""
             width={300}
             height={300}
