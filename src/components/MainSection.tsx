@@ -60,7 +60,7 @@ const MainSection = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="-mt-16 ml-[345px] flex cursor-pointer items-center text-3xl text-white duration-500 md:hidden"
+        className="-mt-16 ml-[340px] flex cursor-pointer items-center text-3xl duration-500 dark:text-white md:hidden"
       >
         {nav ? <AiOutlineClose /> : <AiOutlineMenu />}
       </div>

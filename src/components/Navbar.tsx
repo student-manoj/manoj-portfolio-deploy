@@ -32,7 +32,7 @@ const Navbar = () => {
             </Link>
             {/* ================ logo end ================ */}
 
-            <div className="">
+            <div className="mr-20">
               <ThemeSwitch />
             </div>
           </div>
