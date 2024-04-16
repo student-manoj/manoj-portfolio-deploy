@@ -107,7 +107,7 @@ const ProjectPage = () => {
                     onClick={() => showModalHandler(info.id)}
                     className="rounded-xl bg-slate-800 px-4 py-2 text-white duration-200 ease-in hover:bg-slate-900"
                   >
-                    See Drtails
+                    See Details
                   </button>
                 </div>
               </div>
