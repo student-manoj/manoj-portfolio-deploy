@@ -91,7 +91,7 @@ const ProjectPage = () => {
               className="group relative z-10 overflow-hidden rounded-lg"
             >
               <Image
-                className="h-full w-full rounded-lg opacity-70 transition-transform duration-500 group-hover:scale-105"
+                className="h-full w-full rounded-lg transition-transform duration-500 group-hover:scale-105 dark:opacity-70"
                 src={info.img}
                 alt=""
                 width={500}
@@ -100,19 +100,19 @@ const ProjectPage = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black" />
               <div className="absolute bottom-0 left-0 right-0 h-0 overflow-hidden bg-black bg-opacity-75 transition-all duration-300 group-hover:h-full">
-                <div className=" absolute left-0 right-0 top-5 flex justify-center text-2xl">
+                <div className="absolute left-0 right-0 top-5 flex justify-center text-2xl text-white">
                   Name
                 </div>
-                <div className="flex h-full w-full flex-col items-center justify-center gap-6">
+                <div className="flex h-full w-full flex-col items-center justify-center gap-6 text-white">
                   <a
                     href=""
-                    className="-overflow-hidden rounded-lg  px-6  py-2 shadow-lg shadow-yellow-700 ring ring-yellow-700 transition-all duration-300 ease-in"
+                    className="overflow-hidden rounded-lg px-6 py-2 shadow-lg shadow-yellow-700 ring ring-yellow-700 transition-all duration-300 ease-in"
                   >
                     View Prouject
                   </a>
                   <button
                     onClick={() => showModalHandler(info.id)}
-                    className="overflow-hidden rounded-lg px-6  py-2 shadow-lg shadow-yellow-700 ring ring-yellow-700 transition-all duration-300 ease-in"
+                    className="overflow-hidden rounded-lg px-6 py-2 text-white shadow-lg shadow-yellow-700 ring ring-yellow-700 transition-all duration-300 ease-in"
                   >
                     See Details
                   </button>

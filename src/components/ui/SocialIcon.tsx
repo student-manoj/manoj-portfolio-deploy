@@ -11,8 +11,16 @@ const SocialIconData: SocialIconData[] = [
     path: "https://www.facebook.com/profile.php?id=100035671867586",
     icon: <BiLogoFacebook />,
   },
-  { name: "github", path: "/#", icon: <FaGithub /> },
-  { name: "linkedin", path: "/#", icon: <FaLinkedinIn /> },
+  {
+    name: "github",
+    path: "https://github.com/student-manoj",
+    icon: <FaGithub />,
+  },
+  {
+    name: "linkedin",
+    path: "https://www.linkedin.com/in/manoj-biswas-b5b57b244/",
+    icon: <FaLinkedinIn />,
+  },
   {
     name: "Instagram",
     path: "https://www.instagram.com/manoj0212__/",

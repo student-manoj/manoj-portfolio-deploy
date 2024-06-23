@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       <div className="h-24 w-full">
         <div className="container">
-          <div className="flex items-center justify-between py-3">
+          <div className="flex items-center justify-between py-6">
             <Link href="/">
               <motion.div
                 initial={{ opacity: 0 }}
@@ -18,14 +18,16 @@ const Navbar = () => {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="flex justify-center"
               >
-                <Image
-                  src={logo}
-                  alt=""
-                  width={65}
-                  height={65}
-                  priority
-                  className="h-auto w-24 "
-                />
+                <div className="">
+                  <Image
+                    src={logo}
+                    alt=""
+                    width={500}
+                    height={500}
+                    priority
+                    className="h-auto w-28 "
+                  />
+                </div>
               </motion.div>
             </Link>
 

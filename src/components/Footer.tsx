@@ -3,6 +3,7 @@ import SocialIcon from "./ui/SocialIcon";
 import Image from "next/image";
 import { IoLocationOutline } from "react-icons/io5";
 import Logo from "../../public/Logo.png";
+import project1 from "../../public/project1.jpg";
 const Footer = () => {
   return (
     <>
@@ -28,18 +29,36 @@ const Footer = () => {
               </div>
             </div>
             <div className="">
-              <h3 className="text-2xl">Explore Link</h3>
-              <div className="flex flex-col gap-3 py-6">
-                <li>Home</li>
-                <li>About</li>
-                <li>Project</li>
-                <li>Contact</li>
+              <h3 className="text-2xl">Latest Project</h3>
+              <div className="mt-7">
+                <div className="grid grid-cols-3 gap-3 pb-4">
+                  <div className="col-span-1">
+                    <Image src={project1} alt="" />
+                  </div>
+                  <div className="col-span-2">
+                    <div className="text-base font-semibold">
+                      New Dental Care project
+                    </div>
+                    <div className="">05 Apr 2024</div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 gap-3">
+                  <div className="col-span-1">
+                    <Image src={project1} alt="" />
+                  </div>
+                  <div className="col-span-2">
+                    <div className=" font-semibold">
+                      New Dental Care project
+                    </div>
+                    <div className="">05 Apr 2024</div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="">
-              <h3 className="text-2xl">Explore Link</h3>
+              <h3 className="text-2xl">Get In Touch</h3>
 
-              <div className="">
+              <div className="mt-3">
                 <div className="flex items-center gap-1 py-3 font-semibold">
                   <span className="rounded-full bg-yellow-600 p-2 shadow-inner shadow-white">
                     <AiTwotonePhone className="h-5 w-5" />
