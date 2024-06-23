@@ -10,9 +10,7 @@ const Navbar = () => {
     <>
       <div className="h-24 w-full">
         <div className="container">
-          <div className="flex items-center justify-between py-2">
-            {/* ================ logo ================ */}
-
+          <div className="flex items-center justify-between py-3">
             <Link href="/">
               <motion.div
                 initial={{ opacity: 0 }}
@@ -30,7 +28,6 @@ const Navbar = () => {
                 />
               </motion.div>
             </Link>
-            {/* ================ logo end ================ */}
 
             <div className="mr-20">
               <ThemeSwitch />

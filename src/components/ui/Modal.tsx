@@ -21,7 +21,7 @@ const Modal = ({ activeID, setShowModal }: any) => {
               width={300}
               height={500}
               priority
-              className="h-auto w-auto"
+              className="h-auto w-full"
             />
             <div className="text-xl font-bold text-slate-950">
               {projectss1?.title}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import myImg3 from "../../public/myImg3.png";
+import myImg3 from "../../public/myImg1.png";
 import { roboto } from "@/utils/FontType";
 import { motion } from "framer-motion";
 
@@ -17,43 +17,70 @@ const AboutPage = (info: any) => {
         }}
         className={`${roboto.className} containere`}
       >
-        <div className="mt-20 flex justify-center text-5xl font-bold">
-          <div className="tracking-[0.20em]">About</div>
+        <div className="mt-20 flex flex-col items-center justify-center">
+          <div className="text-5xl font-semibold tracking-[0.20em]">About</div>
+          <div className="mt-2 flex items-center justify-center text-yellow-700">
+            <hr className="w-72 text-yellow-700" />
+          </div>
+          <div className="py-5 text-center font-medium leading-7 text-black/60 dark:text-white/60 lg:w-[550px]">
+            Thanks for visiting the portfolio. Here the work of web site design
+            and website development is done. And with figma and PhotoShop UI
+            designing is also done.
+          </div>
         </div>
-        <div className="mt-2 flex items-center justify-center text-yellow-700">
-          <hr className="w-72 text-yellow-700" />
-        </div>
-        <div className="mt-14 flex flex-col justify-between gap-8 md:flex-row md:gap-14 lg:flex-row lg:gap-20">
-          <div className="absolute ml-8 mt-4 h-96 w-[300px] rounded-3xl border border-yellow-300 md:w-[260px]  lg:w-[310px]" />
-          <div className="z-50 flex h-96 justify-center md:w-[450px] lg:w-[550px]">
+
+        <div className="grid place-items-center gap-16 py-16 lg:grid-cols-2">
+          <div className="lg:h-[650px] lg:w-[500px] ">
             <Image
               src={myImg3}
               alt=""
-              width={250}
-              height={250}
-              className="h-auto w-auto"
+              width={550}
+              height={550}
+              className="h-full w-full"
               priority
             />
           </div>
-          <div className="text-wrap mt-10 flex w-full flex-col items-center gap-3 text-center md:items-start md:text-start lg:items-start lg:text-start ">
-            <h1 className="text-xl font-bold tracking-widest">My Details</h1>
-            <p className="font-medium leading-6 sm:pl-10 sm:pr-4 ">
-              Hello, My Name Is{" "}
-              <span className="text-yellow-600">Manoj Biswas</span>. I Am a
-              Forntend Designer & Developer And UI/UX Designer.
-              <br />
-              Iam a Fresher I Have No Exprience Working Any Company. I Always
-              like To Work With My Integrity. I Always Learn Something New In
-              This Field So i Like To Work In This Field.
+
+          <div className="flex flex-col gap-2">
+            <h3 className="py-6 text-3xl font-bold">
+              Hello i am Web Frontend Developer Manoj Biswas
+            </h3>
+            <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
+              About Me
+            </h1>
+            <p className="flex flex-col gap-3 pb-3 font-medium leading-7 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-2">
+              <span className="">
+                Hello, My Name is{" "}
+                <span className="text-yellow-600">Manoj Biswas</span>. I Am a
+                Forntend Designer & Developer And UI/UX Designer.
+              </span>
+              <span className="">
+                I am always try do to something new. Always like To Work With My
+                Integrity. I Always Learn Something New In This Field So i Like
+                To Work In This Field.
+              </span>
             </p>
-            <h1 className="text-xl font-bold tracking-widest">Education</h1>
-            <p className="flex font-medium leading-5 sm:pl-10 sm:pr-4">
-              Complated Full Stuck Web Development course from (cit) computer
-              insttitute. Complated My Graduation From Basirhat Collage
+            <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
+              Education
+            </h1>
+            <p className="flex flex-col gap-3 font-medium leading-5 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-4">
+              <li className="">Complete (H.S) from Dhanyakuria High School</li>
+              <li className="">Complete (B.A) from Basirhat College</li>
+              <li className="">Complete Full Stack Web Developer from (CIT)</li>
+            </p>
+            <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
+              Skill Highlights
+            </h1>
+            <p className="flex flex-col gap-3 font-medium leading-5 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-4">
+              <li className="">Web Designer</li>
+              <li className="">Web Developer</li>
+              <li className="">Figma Designer</li>
+              <li className="">Responcive Designer</li>
+              <li className="">Creative Design</li>
             </p>
             <div className="mt-5">
               <a href="manojCV.pdf" download>
-                <button className="-ring-offset-4 group relative flex items-center overflow-hidden rounded-full px-3 py-3 shadow-lg shadow-yellow-700 ring ring-yellow-700">
+                <button className="-ring-offset-4 group relative flex items-center overflow-hidden rounded-lg px-7 py-3 shadow-lg shadow-yellow-700 ring ring-yellow-700">
                   <span className="absolute left-0 h-0 w-full bg-gradient-to-b from-yellow-600 to-yellow-800 transition-all duration-300 ease-in group-hover:top-0 group-hover:h-full" />
                   <span className="relative">Download CV</span>
                 </button>

@@ -17,7 +17,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div className="">
         {showContent && (
           <>
-            <div className="bg-slate-300 text-black duration-500 dark:bg-black/90 dark:text-white">
+            <div className="text-black duration-500 dark:bg-black dark:text-white">
               <Navbar />
               {children}
               <Footer />

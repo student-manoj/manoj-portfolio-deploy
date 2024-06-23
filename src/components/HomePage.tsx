@@ -20,9 +20,9 @@ const HomePage = () => {
   return (
     <>
       <div className="containere pt-8">
-        <div className=" justify-betweensm:flex-col -z-50 gap-36 md:flex md:flex-row lg:flex">
+        <div className="justify-betweensm:flex-col -z-50 md:flex md:flex-row lg:flex lg:gap-36">
           {/* ================ Hero Left start ================ */}
-          <div className="mt-8 flex w-full flex-col items-center gap-5 text-center md:basis-1/2 md:items-start md:text-start lg:items-start lg:text-start">
+          <div className="mt-8 flex w-full flex-col items-center gap-4 text-center md:basis-1/2 md:items-start md:text-start lg:items-start lg:text-start">
             <motion.div
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
@@ -36,14 +36,29 @@ const HomePage = () => {
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut", delay: 0.75 }}
-              className={`${roboto.className} font-[700] leading-9 sm:text-4xl sm:leading-10`}
+              className={`${roboto.className} font-[700] leading-9 sm:text-5xl sm:leading-10`}
             >
-              <span className="text-5xl">
+              <span className="text-5xl xl:text-6xl">
                 I am <span className="text-yellow-600">Manoj Biswas</span>{" "}
               </span>
               <br />
               <div className="h-7 py-2 text-3xl font-medium">{text}</div>
             </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 1.65 }}
+              className={`${roboto.className} mt-7 flex gap-2 text-lg leading-8 text-black/60 dark:text-white/60 sm:pr-10`}
+            >
+              <span className="text-yellow-500">
+                <RiAppsLine />
+              </span>
+              Hello I am Creative Front-end Designer and Front-end Developer. i
+              am working in Html, CSS, Javascript, React.js, Next.js,
+              Tailwind.CSS and TypeScript.
+            </motion.p>
+
             <div className={`${roboto.className} mt-4 flex items-center gap-6`}>
               <motion.button
                 initial={{ opacity: 0, y: 5 }}
@@ -53,10 +68,10 @@ const HomePage = () => {
               >
                 <Link
                   href="/contact"
-                  className="group relative flex items-center overflow-hidden rounded-lg px-3 py-2 font-medium text-white shadow-inner shadow-yellow-600"
+                  className="group relative flex items-center overflow-hidden rounded-lg px-4 py-2 font-medium text-white shadow-inner shadow-yellow-600"
                 >
                   <span className="absolute left-0 h-0 w-full bg-gradient-to-b from-yellow-600 to-yellow-800 transition-all duration-300 ease-in group-hover:top-0 group-hover:h-full" />
-                  <span className="relative flex items-center gap-2">
+                  <span className="relative flex items-center gap-2 font-serif">
                     <AiOutlineMail /> Contact Me
                   </span>
                 </Link>
@@ -69,43 +84,30 @@ const HomePage = () => {
               >
                 <Link
                   href="/project"
-                  className="group relative flex items-center overflow-hidden rounded-lg px-3 py-2 font-medium text-white shadow-inner shadow-yellow-600"
+                  className="group relative flex items-center overflow-hidden rounded-lg px-4 py-2 font-medium text-white shadow-inner shadow-yellow-600"
                 >
                   <span className="absolute left-0 h-0 w-full bg-gradient-to-b from-yellow-600 to-yellow-800 transition-all duration-300 ease-in group-hover:top-0 group-hover:h-full" />
-                  <span className="relative">See Project</span>
+                  <span className="relative font-serif">See Project</span>
                 </Link>
               </motion.button>
             </div>
-            <motion.p
-              initial={{ opacity: 0, y: 5 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeInOut", delay: 1.65 }}
-              className={`${roboto.className} mt-4 flex gap-2 font-medium leading-6 sm:pl-10 sm:pr-10`}
-            >
-              <span className="text-yellow-500">
-                <RiAppsLine />
-              </span>
-              Creative front-end Developer with experience.Proficient in Html,
-              CSS, Javascript, React.js, Tailwind.CSS, Next.js and TypeScript.
-            </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut", delay: 1.95 }}
-              className={`${roboto.className}  flex gap-9`}
+              className={`${roboto.className} mt-7 flex gap-6`}
             >
-              <span className="h-7 text-base font-medium">Follow me :</span>
+              <span className=" font-serif font-medium lg:text-xl">
+                Follow me :
+              </span>
               <SocialIcon />
             </motion.div>
           </div>
-          {/* ================ Hero left end ================ */}
-          {/* ================ my img  start ================ */}
+
           <div className="">
             <MyImg />
           </div>
-
-          {/* ================ my img  end ================ */}
         </div>
       </div>
     </>
