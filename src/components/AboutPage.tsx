@@ -43,7 +43,7 @@ const AboutPage = (info: any) => {
 
           <div className="flex flex-col gap-2">
             <h3 className="py-6 text-3xl font-bold">
-              Hello i am Web Frontend Developer Manoj Biswas
+              Hello i am Web Forntend Designer & Developer Manoj Biswas
             </h3>
             <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
               About Me
@@ -64,7 +64,7 @@ const AboutPage = (info: any) => {
               Education
             </h1>
             <p className="flex flex-col gap-3 font-medium leading-5 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-4">
-              <li className="">Complete (H.S) from Dhanyakuria High School</li>
+              <li className="">Complete (H.S) from Matia High School</li>
               <li className="">Complete (B.A) from Basirhat College</li>
               <li className="">Complete Full Stack Web Developer from (CIT)</li>
             </p>
@@ -75,7 +75,7 @@ const AboutPage = (info: any) => {
               <li className="">Web Designer</li>
               <li className="">Web Developer</li>
               <li className="">Figma Designer</li>
-              <li className="">Responcive Designer</li>
+              <li className="">Responsive Designer</li>
               <li className="">Creative Design</li>
             </p>
             <div className="mt-5">
