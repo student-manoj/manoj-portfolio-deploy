@@ -71,7 +71,7 @@ const AboutPage = (info: any) => {
               <li className="">Complete Full Stack Web Developer from (CIT)</li>
             </p>
             <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
-              Skill's
+              Skill&apos;s
             </h1>
             <div className="flex flex-wrap items-center gap-5 pb-6 sm:pl-10 sm:pr-4">
               {IconData.map((value) => (
