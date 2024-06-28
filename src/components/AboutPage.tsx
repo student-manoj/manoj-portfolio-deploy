@@ -2,6 +2,8 @@ import Image from "next/image";
 import myImg3 from "../../public/myImg1.png";
 import { roboto } from "@/utils/FontType";
 import { motion } from "framer-motion";
+import html from "../../public/html.png";
+import { IconData } from "@/utils/IconData";
 
 const AboutPage = (info: any) => {
   return (
@@ -29,7 +31,7 @@ const AboutPage = (info: any) => {
           </div>
         </div>
 
-        <div className="grid place-items-center gap-16 py-16 lg:grid-cols-2">
+        <div className="grid place-items-center gap-16 lg:grid-cols-2 lg:py-16">
           <div className="lg:h-[650px] lg:w-[500px] ">
             <Image
               src={myImg3}
@@ -63,11 +65,30 @@ const AboutPage = (info: any) => {
             <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
               Education
             </h1>
-            <p className="flex flex-col gap-3 font-medium leading-5 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-4">
+            <p className="flex flex-col gap-3 pb-3 font-medium leading-5 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-4">
               <li className="">Complete (H.S) from Matia High School</li>
               <li className="">Complete (B.A) from Basirhat College</li>
               <li className="">Complete Full Stack Web Developer from (CIT)</li>
             </p>
+            <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
+              Skill's
+            </h1>
+            <div className="flex flex-wrap items-center gap-5 pb-6 sm:pl-10 sm:pr-4">
+              {IconData.map((value) => (
+                <div
+                  key={value.id}
+                  className="flex h-12 w-12 items-center justify-center rounded-full border duration-300 hover:rotate-180 hover:scale-125"
+                >
+                  <Image
+                    src={value.img}
+                    alt="icon"
+                    width={500}
+                    height={500}
+                    className="h-6 w-6"
+                  />
+                </div>
+              ))}
+            </div>
             <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
               Skill Highlights
             </h1>

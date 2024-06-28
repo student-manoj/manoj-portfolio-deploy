@@ -20,8 +20,7 @@ const HomePage = () => {
   return (
     <>
       <div className="containere pt-8">
-        <div className="justify-betweensm:flex-col -z-50 md:flex md:flex-row lg:flex lg:gap-36">
-          {/* ================ Hero Left start ================ */}
+        <div className="grid place-items-center gap-6 md:grid-cols-2">
           <div className="mt-8 flex w-full flex-col items-center gap-4 text-center md:basis-1/2 md:items-start md:text-start lg:items-start lg:text-start">
             <motion.div
               initial={{ opacity: 0, y: 5 }}
@@ -38,9 +37,9 @@ const HomePage = () => {
               transition={{ duration: 1, ease: "easeInOut", delay: 0.75 }}
               className={`${roboto.className} font-[700] leading-9 sm:text-5xl sm:leading-10`}
             >
-              <span className="text-5xl xl:text-6xl">
+              <i className="text-5xl xl:text-6xl">
                 I am <span className="text-yellow-600">Manoj Biswas</span>{" "}
-              </span>
+              </i>
               <br />
               <div className="h-7 py-2 text-3xl font-medium">{text}</div>
             </motion.div>
@@ -54,8 +53,8 @@ const HomePage = () => {
               <span className="text-yellow-500">
                 <RiAppsLine />
               </span>
-              Hello I am Creative Front-end Designer and Front-end Developer. i
-              am working in Html, CSS, Javascript, React.js, Next.js,
+              Hello I am Creative Front-end Designer and Front-end Developer. I
+              am Working in Html, CSS, Javascript, React.js, Next.js,
               Tailwind.CSS and TypeScript.
             </motion.p>
 
@@ -96,16 +95,15 @@ const HomePage = () => {
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut", delay: 1.95 }}
-              className={`${roboto.className} mt-7 flex gap-6`}
+              className={`${roboto.className} flex items-center gap-6 lg:mt-7`}
             >
-              <span className=" font-serif font-medium lg:text-xl">
+              <span className="font-serif font-medium lg:text-xl">
                 Follow me :
               </span>
               <SocialIcon />
             </motion.div>
           </div>
-
-          <div className="">
+          <div className="grid place-content-end">
             <MyImg />
           </div>
         </div>

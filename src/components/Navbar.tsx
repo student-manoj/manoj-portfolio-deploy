@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       <div className="h-24 w-full">
         <div className="container">
-          <div className="flex items-center justify-between py-6">
+          <div className="flex items-center justify-between lg:py-6">
             <Link href="/">
               <motion.div
                 initial={{ opacity: 0 }}

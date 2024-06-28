@@ -88,7 +88,7 @@ const ContactPage = () => {
               title="google maps"
               referrerPolicy="no-referrer-when-downgrade"
               loading="lazy"
-              className="h-full w-full"
+              className="h-full w-full rounded-lg"
             ></iframe>
           </div>
 
@@ -104,6 +104,7 @@ const ContactPage = () => {
                   onChange={(e) => setfName(e.target.value)}
                 />
                 <input
+                  required
                   name="form_email"
                   type="email"
                   placeholder="Enter your email"
@@ -111,6 +112,7 @@ const ContactPage = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <textarea
+                  required
                   name="message"
                   cols={cols}
                   rows={rows}

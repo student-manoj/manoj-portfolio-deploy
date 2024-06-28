@@ -62,18 +62,18 @@ const ProjectPage = () => {
             <span className="relative">All</span>
           </button>
           <button
-            onClick={() => filterItem("uiUx")}
+            onClick={() => filterItem("Nextjs")}
             className="-ring-offset-4 group relative flex items-center overflow-hidden rounded-lg px-5 py-2 font-medium shadow-lg shadow-yellow-700 ring ring-yellow-700"
           >
             <span className="absolute left-0 h-0 w-full bg-gradient-to-b from-yellow-600 to-yellow-800 transition-all duration-300 ease-in group-hover:top-0 group-hover:h-full" />
-            <span className="relative">UI/UX Design</span>
+            <span className="relative">Next js</span>
           </button>
           <button
             onClick={() => filterItem("web")}
             className="-ring-offset-4 group relative flex items-center overflow-hidden rounded-lg px-5 py-2 font-medium shadow-lg shadow-yellow-700 ring ring-yellow-700"
           >
             <span className="absolute left-0 h-0 w-full bg-gradient-to-b from-yellow-600 to-yellow-800 transition-all duration-300 ease-in group-hover:top-0 group-hover:h-full" />
-            <span className="relative">Web Design</span>
+            <span className="relative">javaScritp</span>
           </button>
           <button
             onClick={() => filterItem("web")}
@@ -91,21 +91,22 @@ const ProjectPage = () => {
               className="group relative z-10 overflow-hidden rounded-lg"
             >
               <Image
-                className="h-full w-full rounded-lg transition-transform duration-500 group-hover:scale-105 dark:opacity-70"
+                className="h-60 w-full rounded-lg transition-transform duration-500 group-hover:scale-105 dark:opacity-70"
                 src={info.img}
-                alt=""
+                alt="image"
                 width={500}
                 height={400}
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black" />
               <div className="absolute bottom-0 left-0 right-0 h-0 overflow-hidden bg-black bg-opacity-75 transition-all duration-300 group-hover:h-full">
-                <div className="absolute left-0 right-0 top-5 flex justify-center text-2xl text-white">
-                  Name
+                <div className="absolute left-0 right-0 top-4 flex justify-center text-2xl text-white">
+                 {info.name}
                 </div>
-                <div className="flex h-full w-full flex-col items-center justify-center gap-6 text-white">
+                <div className="flex h-full w-full flex-col items-center justify-center gap-4 text-white">
                   <a
-                    href=""
+                    href={info.path}
+                    target="_blank"
                     className="overflow-hidden rounded-lg px-6 py-2 shadow-lg shadow-yellow-700 ring ring-yellow-700 transition-all duration-300 ease-in"
                   >
                     View Prouject
