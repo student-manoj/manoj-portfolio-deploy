@@ -7,7 +7,11 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        spin: "spin 6s linear infinite",
+      },
+    },
   },
   darkMode: "class",
   plugins: [],

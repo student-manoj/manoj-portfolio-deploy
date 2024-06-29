@@ -1,8 +1,8 @@
 import Image from "next/image";
+// import myImg3 from "../../public/image.webp";
 import myImg3 from "../../public/myImg1.png";
 import { roboto } from "@/utils/FontType";
 import { motion } from "framer-motion";
-import html from "../../public/html.png";
 import { IconData } from "@/utils/IconData";
 
 const AboutPage = (info: any) => {
@@ -31,8 +31,16 @@ const AboutPage = (info: any) => {
           </div>
         </div>
 
-        <div className="grid place-items-center gap-16 lg:grid-cols-2 lg:py-16">
+        <div className="grid place-items-center gap-16 lg:grid-cols-2">
           <div className="lg:h-[650px] lg:w-[500px] ">
+            {/* <Image
+              src={myImg3}
+              alt=""
+              width={550}
+              height={550}
+              className="h-full w-full"
+              priority
+            /> */}
             <Image
               src={myImg3}
               alt=""

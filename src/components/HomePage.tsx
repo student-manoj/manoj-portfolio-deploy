@@ -19,7 +19,7 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="containere pt-8">
+      <div className="containere pb-5">
         <div className="grid place-items-center gap-6 md:grid-cols-2">
           <div className="mt-8 flex w-full flex-col items-center gap-4 text-center md:basis-1/2 md:items-start md:text-start lg:items-start lg:text-start">
             <motion.div
@@ -103,7 +103,7 @@ const HomePage = () => {
               <SocialIcon />
             </motion.div>
           </div>
-          <div className="grid place-content-end">
+          <div className="md:grid place-content-end hidden">
             <MyImg />
           </div>
         </div>

@@ -100,7 +100,7 @@ const ContactPage = () => {
                   name="form_name"
                   type="text"
                   placeholder="Enter your name"
-                  className="w-full rounded-md border border-gray-300 bg-black/10 p-3 text-base text-gray-900 focus:outline-none dark:bg-black dark:text-white"
+                  className="w-full rounded-md border border-yellow-700 bg-black/10 p-3 text-base text-gray-900 focus:outline-none dark:bg-black dark:text-white"
                   onChange={(e) => setfName(e.target.value)}
                 />
                 <input
@@ -108,7 +108,7 @@ const ContactPage = () => {
                   name="form_email"
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full rounded-md border border-gray-300 bg-black/10 p-3 text-base text-gray-900 focus:outline-none dark:bg-black dark:text-white"
+                  className="w-full rounded-md border border-yellow-700 bg-black/10 p-3 text-base text-gray-900 focus:outline-none dark:bg-black dark:text-white"
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <textarea
@@ -117,7 +117,7 @@ const ContactPage = () => {
                   cols={cols}
                   rows={rows}
                   placeholder="Write your message "
-                  className="h-52 w-full rounded-md border border-gray-300 bg-black/10 p-3 text-base text-gray-900 focus:outline-none dark:bg-black dark:text-white lg:h-72"
+                  className="h-52 w-full rounded-md border border-yellow-700 bg-black/10 p-3 text-base text-gray-900 focus:outline-none dark:bg-black dark:text-white lg:h-72"
                 ></textarea>
 
                 <button
@@ -125,7 +125,7 @@ const ContactPage = () => {
                   onClick={gatdata}
                   className="-ring-offset-4 group relative flex items-center overflow-hidden rounded-lg px-8 py-2 font-medium text-black shadow-lg shadow-yellow-700 ring ring-yellow-700 dark:text-white"
                 >
-                  <span className="absolute left-0 h-0 w-full bg-gradient-to-b from-yellow-600 to-yellow-800 transition-all duration-300 ease-in group-hover:top-0 group-hover:h-full" />
+                  <span className="absolute left-0 h-0 w-full bg-gradient-to-b from-yellow-600 to-yellow-800 transition-all durayborder-yellow-700 ease-in group-hover:top-0 group-hover:h-full" />
                   <span className="relative">Submit</span>
                 </button>
               </div>
