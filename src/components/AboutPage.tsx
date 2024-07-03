@@ -53,21 +53,20 @@ const AboutPage = (info: any) => {
 
           <div className="flex flex-col gap-2">
             <h3 className="py-6 text-3xl font-bold">
-              Hello i am Web Forntend Designer & Developer Manoj Biswas
+              Hello I am Web Forntend Designer & Developer Manoj Biswas
             </h3>
             <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
               About Me
             </h1>
             <p className="flex flex-col gap-3 pb-3 font-medium leading-7 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-2">
-              <span className="">
-                Hello, My Name is{" "}
-                <span className="text-yellow-600">Manoj Biswas</span>. I Am a
+              <span>
+                Hello, My Name is <span className="text-yellow-600"> Manoj Biswas</span>. I Am a
                 Forntend Designer & Developer And UI/UX Designer.
               </span>
-              <span className="">
+              <span>
                 I am always try do to something new. Always like To Work With My
-                Integrity. I Always Learn Something New In This Field So i Like
-                To Work In This Field.
+                Integrity. I always learn Something new in this field so i like
+                to work in this field.
               </span>
             </p>
             <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">

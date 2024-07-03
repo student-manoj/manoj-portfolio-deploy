@@ -109,7 +109,7 @@ const ProjectPage = () => {
                     target="_blank"
                     className="overflow-hidden rounded-lg px-6 py-2 shadow-lg shadow-yellow-700 ring ring-yellow-700 transition-all duration-300 ease-in"
                   >
-                    View Prouject
+                    View Project
                   </a>
                   <button
                     onClick={() => showModalHandler(info.id)}
