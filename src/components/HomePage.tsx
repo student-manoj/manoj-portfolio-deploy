@@ -21,7 +21,7 @@ const HomePage = () => {
     <>
       <div className="containere pb-5">
         <div className="grid place-items-center gap-6 md:grid-cols-2">
-          <div className="mt-8 flex w-full flex-col items-center gap-4 text-center md:basis-1/2 md:items-start md:text-start lg:items-start lg:text-start">
+          <div className="flex w-full flex-col items-center gap-4 text-center md:basis-1/2 md:items-start md:text-start lg:items-start lg:text-start">
             <motion.div
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ const HomePage = () => {
               <span className="text-yellow-500">
                 <RiAppsLine />
               </span>
-              Hello I am Creative Front-end Designer and Front-end Developer. I
+              Hello I am Front-end Designer & Developer. I
               am Working in Html, CSS, Javascript, React.js, Next.js,
               Tailwind.CSS and TypeScript.
             </motion.p>

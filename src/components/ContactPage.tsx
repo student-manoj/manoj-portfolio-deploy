@@ -3,6 +3,7 @@ import { FormEvent, useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
+import HearderSection from "./ui/HearderSection";
 
 type FormRef = React.MutableRefObject<HTMLFormElement | null>;
 
@@ -68,20 +69,10 @@ const ContactPage = () => {
         }}
         className="containere"
       >
-        <div className="mt-20 flex flex-col items-center justify-center">
-          <div className="text-5xl font-semibold tracking-[0.20em]">
-            Contact
-          </div>
-          <div className="mt-4 flex items-center justify-center text-yellow-700">
-            <hr className="w-72 text-yellow-700" />
-          </div>
-          <div className="py-5 text-center font-medium leading-7 text-black/60 dark:text-white/60 lg:w-[550px]">
-            Thanks for visiting the portfolio. Here the work of web site design
-            and website development is done. And with figma and PhotoShop UI
-            designing is also done.
-          </div>
-        </div>
-        <div className="mt-14 grid gap-16 lg:grid-cols-2 ">
+        
+        <HearderSection title="Contact" Description="Thanks for visiting the portfolio. This is the Contact Us"/>
+        
+        <div className="mt-14 grid gap-16 lg:grid-cols-2">
           <div className="h-[500px] lg:w-[500px] xl:w-[600px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.367443269133!2d88.77037357335726!3d22.714580127755305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8aca130e5d873%3A0x253272649870109f!2sArbelia%20Post%20Office!5e0!3m2!1sen!2sin!4v1700141906689!5m2!1sen!2sin"

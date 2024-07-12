@@ -41,7 +41,7 @@ const Footer = () => {
                     </Link>
                   <div className="col-span-2">
                     <div className="text-base font-semibold">
-                      New Dental Care project
+                      New Vrzone project
                     </div>
                     <div className="">05 Apr 2024</div>
                   </div>
@@ -54,7 +54,7 @@ const Footer = () => {
                   </Link>
                   <div className="col-span-2">
                     <div className=" font-semibold">
-                      New Dental Care project
+                    New Syrniki project
                     </div>
                     <div className="">05 Apr 2024</div>
                   </div>

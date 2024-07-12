@@ -1,9 +1,9 @@
 import Image from "next/image";
-// import myImg3 from "../../public/image.webp";
 import myImg3 from "../../public/myImg1.png";
 import { roboto } from "@/utils/FontType";
 import { motion } from "framer-motion";
 import { IconData } from "@/utils/IconData";
+import HearderSection from "./ui/HearderSection";
 
 const AboutPage = (info: any) => {
   return (
@@ -19,19 +19,9 @@ const AboutPage = (info: any) => {
         }}
         className={`${roboto.className} containere`}
       >
-        <div className="mt-20 flex flex-col items-center justify-center">
-          <div className="text-5xl font-semibold tracking-[0.20em]">About</div>
-          <div className="mt-2 flex items-center justify-center text-yellow-700">
-            <hr className="w-72 text-yellow-700" />
-          </div>
-          <div className="py-5 text-center font-medium leading-7 text-black/60 dark:text-white/60 lg:w-[550px]">
-            Thanks for visiting the portfolio. Here the work of web site design
-            and website development is done. And with figma and PhotoShop UI
-            designing is also done.
-          </div>
-        </div>
+       <HearderSection title="About" Description="Thanks for visiting the portfolio This is the About Me."/>
 
-        <div className="grid place-items-center gap-16 lg:grid-cols-2">
+        <div className="grid place-items-center gap-16 lg:grid-cols-2 mt-12">
           <div className="lg:h-[650px] lg:w-[500px] ">
             {/* <Image
               src={myImg3}
@@ -52,9 +42,9 @@ const AboutPage = (info: any) => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="py-6 text-3xl font-bold">
+            {/* <h3 className="py-6 text-3xl font-bold">
               Hello I am Web Forntend Designer & Developer Manoj Biswas
-            </h3>
+            </h3> */}
             <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
               About Me
             </h1>
@@ -96,7 +86,7 @@ const AboutPage = (info: any) => {
                 </div>
               ))}
             </div>
-            <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
+            {/* <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
               Skill Highlights
             </h1>
             <p className="flex flex-col gap-3 font-medium leading-5 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-4">
@@ -105,7 +95,7 @@ const AboutPage = (info: any) => {
               <li className="">Figma Designer</li>
               <li className="">Responsive Designer</li>
               <li className="">Creative Design</li>
-            </p>
+            </p> */}
             <div className="mt-5">
               <a href="manojCV.pdf" download>
                 <button className="-ring-offset-4 group relative flex items-center overflow-hidden rounded-lg px-7 py-3 shadow-lg shadow-yellow-700 ring ring-yellow-700">

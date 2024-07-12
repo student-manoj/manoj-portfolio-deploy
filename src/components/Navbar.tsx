@@ -10,27 +10,24 @@ const Navbar = () => {
     <>
       <div className="h-24 w-full">
         <div className="container">
-          <div className="flex items-center justify-between lg:py-6">
+          <div className="flex items-center justify-between lg:py-1">
             <Link href="/">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="flex justify-center"
-              >
-                <div className="">
+              > 
                   <Image
                     src={logo}
-                    alt=""
+                    alt="Logo"
                     width={500}
                     height={500}
                     priority
-                    className="h-auto w-28 "
-                  />
-                </div>
+                    className="h-auto w-28"
+                  /> 
               </motion.div>
             </Link>
-
             <div className="mr-20">
               <ThemeSwitch />
             </div>

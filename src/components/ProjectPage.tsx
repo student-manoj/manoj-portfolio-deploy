@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Modal from "./ui/Modal";
 import { motion } from "framer-motion";
+import HearderSection from "./ui/HearderSection";
 
 const ProjectPage = () => {
   const [nextItems, setNextItems] = useState(6);
@@ -39,21 +40,9 @@ const ProjectPage = () => {
         }}
         className="containere"
       >
-        <div className="mt-20 flex flex-col items-center justify-center">
-          <div className="text-5xl font-semibold tracking-[0.20em]">
-            Project
-          </div>
-          <div className="mt-4 flex items-center justify-center text-yellow-700">
-            <hr className="w-72 text-yellow-700" />
-          </div>
-          <div className="py-5 text-center font-medium leading-7 text-black/60 dark:text-white/60 lg:w-[550px]">
-            Thanks for visiting the portfolio. Here the work of web site design
-            and website development is done. And with figma and PhotoShop UI
-            designing is also done.
-          </div>
-        </div>
-
-        <div className="sm: mt-12 flex flex-wrap justify-center gap-4">
+        <HearderSection title="Project" Description="Thanks for visiting the portfolio. Check out my projects."/>
+            
+        <div className="mt-12 flex flex-wrap justify-center gap-4">
           <button
             onClick={() => setItems(ProjectItems)}
             className="-ring-offset-4 group relative flex items-center overflow-hidden rounded-lg px-7 py-2 font-medium shadow-lg shadow-yellow-700 ring ring-yellow-700"
@@ -88,7 +77,7 @@ const ProjectPage = () => {
           {items?.slice(0, nextItems)?.map((info, id) => (
             <div
               key={id}
-              className="group relative z-10 overflow-hidden rounded-lg"
+              className="group relative z-10 overflow-hidden rounded-lg shadow-2xl shadow-yellow-500/20"
             >
               <Image
                 className="h-60 w-full rounded-lg transition-transform duration-500 group-hover:scale-105 dark:opacity-70"

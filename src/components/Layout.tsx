@@ -9,7 +9,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   const handleLoder = () => {
     setIsLoading(false);
-    setTimeout(() => setShowContent(true), 1000);
+    setTimeout(() => setShowContent(true), 3000);
   };
 
   return (

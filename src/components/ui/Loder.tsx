@@ -4,7 +4,7 @@ const Loder = ({ isLoading, setIsLoading }: any) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading();
-    }, 1000);
+    }, 3000);
   }, [setIsLoading]);
 
   return (
