@@ -7,7 +7,7 @@ import Image from "next/image";
 import { ProjectItems } from "@/utils/ProjectManu";
 
 
-const project = () => {
+const Project = () => {
 
   const [nextItems, setNextItems] = useState(6);
   const [items, setItems] = useState(ProjectItems);
@@ -130,4 +130,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;

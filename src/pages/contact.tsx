@@ -5,9 +5,10 @@ import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import AllPageHeroSection from "@/components/ui/AllPageHeroSection";
 
+type FormRef = React.MutableRefObject<HTMLFormElement | null>;
 
-const contact = () => {
-  const [fName, setfName] = useState<string | undefined>(undefined);
+const Contact = () => {
+  const [fName, setFName] = useState<string | undefined>(undefined);
   const [email, setEmail] = useState<string | undefined>(undefined);
 
   const gatdata = () => {
@@ -26,7 +27,7 @@ const contact = () => {
       toast.error("Enter valid Email");
     }
     setEmail("");
-    setfName("");
+    setFName("");
   };
 
   let cols: number = 30;
@@ -86,7 +87,7 @@ const contact = () => {
                   type="text"
                   placeholder="Enter your name"
                   className="w-full rounded-md border border-yellow-700 bg-black/10 p-3 text-base text-gray-900 focus:outline-none dark:bg-black dark:text-white"
-                  onChange={(e) => setfName(e.target.value)}
+                  onChange={(e) => setFName(e.target.value)}
                 />
                 <input
                   required
@@ -124,4 +125,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

@@ -10,7 +10,7 @@ type FormRef = React.MutableRefObject<HTMLFormElement | null>;
 // init("YOUR_USER_ID");
 
 const ContactPage = () => {
-  const [fName, setfName] = useState<string | undefined>(undefined);
+  const [fName, setFName] = useState<string | undefined>(undefined);
   const [email, setEmail] = useState<string | undefined>(undefined);
 
   const gatdata = () => {
@@ -29,7 +29,7 @@ const ContactPage = () => {
       toast.error("Enter valid Email");
     }
     setEmail("");
-    setfName("");
+    setFName("");
   };
 
   let cols: number = 30;
@@ -92,7 +92,7 @@ const ContactPage = () => {
                   type="text"
                   placeholder="Enter your name"
                   className="w-full rounded-md border border-yellow-700 bg-black/10 p-3 text-base text-gray-900 focus:outline-none dark:bg-black dark:text-white"
-                  onChange={(e) => setfName(e.target.value)}
+                  onChange={(e) => setFName(e.target.value)}
                 />
                 <input
                   required
