@@ -20,7 +20,7 @@ const MainSection = () => {
   };
   return (
     <>
-      <div className="left-[480px] -mt-16 hidden justify-center gap-8 md:flex xl:-mt-10">
+      <div className="left-[480px] -mt-16 hidden justify-center gap-8 md:flex">
         <motion.div
           initial={{ opacity: 0, y: -25 }}
           animate={{ opacity: 1, y: 0 }}
