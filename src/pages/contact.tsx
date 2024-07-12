@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { FormEvent, useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { FaAngleLeft } from "react-icons/fa6";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import AllPageHeroSection from "@/components/ui/AllPageHeroSection";
