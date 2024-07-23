@@ -21,7 +21,7 @@ const HomePage = () => {
     <>
       <div className="containere pb-5">
         <div className="grid place-items-center gap-6 md:grid-cols-2">
-          <div className="flex w-full flex-col items-center gap-4 text-center md:basis-1/2 md:items-start md:text-start lg:items-start lg:text-start">
+          <div className="flex w-full flex-col items-center gap-4 text-center md:basis-1/2 md:items-start md:text-start lg:items-start lg:text-start mt-10">
             <motion.div
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
