@@ -15,10 +15,10 @@ const ProjectPage = () => {
     setNextItems((prev) => prev + 3);
   };
 
-  const showModalHandler = (id: any) => {
-    setShowModal(true);
-    setActiveID(id);
-  };
+  // const showModalHandler = (id: any) => {
+  //   setShowModal(true);
+  //   setActiveID(id);
+  // };
 
   const filterItem = (category: any) => {
     const updatadItem = ProjectItems.filter((curElem) => {
@@ -100,12 +100,12 @@ const ProjectPage = () => {
                   >
                     View Project
                   </a>
-                  <button
+                  {/* <button
                     onClick={() => showModalHandler(info.id)}
                     className="overflow-hidden rounded-lg px-6 py-2 text-white shadow-lg shadow-yellow-700 ring ring-yellow-700 transition-all duration-300 ease-in"
                   >
                     See Details
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
