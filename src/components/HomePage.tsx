@@ -28,7 +28,7 @@ const HomePage = () => {
               transition={{ duration: 1, ease: "easeInOut", delay: 0.6 }}
               className={`${roboto.className} flex items-center gap-3 text-xl font-medium`}
             >
-              Hello <IoHandLeftOutline />
+            Hello 👋
             </motion.div>
 
             <motion.div
