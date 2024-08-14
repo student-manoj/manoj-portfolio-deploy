@@ -62,11 +62,11 @@ const AboutPage = (info: any) => {
             <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
               Education
             </h1>
-            <p className="flex flex-col gap-3 pb-3 font-medium leading-5 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-4">
+            <div className="flex flex-col gap-3 pb-3 font-medium leading-5 text-black/60 dark:text-white/60 sm:pl-10 sm:pr-4">
               <li className="">Complete (H.S) from Matia High School</li>
               <li className="">Complete (B.A) from Basirhat College</li>
               <li className="">Complete Full Stack Web Developer from (CIT)</li>
-            </p>
+            </div>
             <h1 className="text-xl font-bold tracking-widest text-yellow-600 underline">
               Skill&apos;s
             </h1>

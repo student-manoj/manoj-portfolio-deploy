@@ -85,7 +85,7 @@ const ContactPage = () => {
 
           <div className="w-full lg:mt-5">
             <form ref={form} onSubmit={sendEmail}>
-              <div className="flex flex-col items-center gap-5 text-center text-black ">
+              <div className="flex flex-col items-center gap-5 text-center text-black">
                 <input
                   required
                   name="form_name"

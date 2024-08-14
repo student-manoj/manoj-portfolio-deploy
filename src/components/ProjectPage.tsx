@@ -62,7 +62,7 @@ const ProjectPage = () => {
             className="-ring-offset-4 group relative flex items-center overflow-hidden rounded-lg px-5 py-2 font-medium shadow-lg shadow-yellow-700 ring ring-yellow-700"
           >
             <span className="absolute left-0 h-0 w-full bg-gradient-to-b from-yellow-600 to-yellow-800 transition-all duration-300 ease-in group-hover:top-0 group-hover:h-full" />
-            <span className="relative">JavaScritp</span>
+            <span className="relative">JavaScript</span>
           </button>
           <button
             onClick={() => filterItem("Webflow")}
